@@ -1,0 +1,274 @@
+/*==================================== RESET STYLES ====================================*/
+/*==================================== RESET STYLES ====================================*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*==================================== VARS ====================================*/
+/*==================================== VARS ====================================*/
+/*==================================== MIXINS ====================================*/
+/*==================================== MIXINS ====================================*/
+/*==================================== FONTS ====================================*/
+/*==================================== FONTS ====================================*/
+html {
+  scroll-behavior: smooth;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+html a {
+  color: inherit;
+}
+
+.wrapper {
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.container {
+  height: 100%;
+  max-width: 1200px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+.heading {
+  text-align: center;
+  font-size: 28px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.main-heading {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.main-heading--small {
+  display: none;
+}
+
+.button {
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  margin-bottom: 20px;
+  background: #dc991e;
+}
+.button:active {
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
+}
+.button:hover {
+  color: yellow;
+}
+
+h3 {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.burger {
+  display: none;
+}
+
+.main--sticky {
+  padding-top: 180px;
+}
+
+/*==================================== HEADER ====================================*/
+/*==================================== HEADER ====================================*/
+.header {
+  padding: 20px 0;
+  z-index: 3;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 20px 1px #e3e3e3;
+          box-shadow: 0px 0px 20px 1px #e3e3e3;
+}
+.header .container {
+  max-width: 1920px;
+}
+.header__menu {
+  height: 50px;
+  background: #dc991e;
+}
+.header__menu-list {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__menu-item {
+  padding: 10px;
+  text-align: center;
+}
+.header__menu-link {
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.header__menu-link:hover {
+  color: yellow;
+}
+.header--sticky {
+  position: fixed;
+  width: 100%;
+}
+
+/*==================================== CHECKLIST ====================================*/
+/*==================================== CHECKLIST ====================================*/
+.checklist {
+  padding: 60px 0;
+}
+.checklist__text {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.checklist__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.checklist__input {
+  max-width: 200px;
+  border: 1px solid black;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.checklist__list-item {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 320px;
+}
+.checklist__list-task {
+  margin-right: 10px;
+}
+.checklist__list-task--done {
+  text-decoration: line-through;
+}
+.checklist__button {
+  padding: 5px;
+  margin-right: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.checklist__button:active {
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
+}
