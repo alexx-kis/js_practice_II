@@ -238,7 +238,7 @@ function makeSticky() {
 ; (function () {
 	let prev = document.querySelector('.slider4__arrows-arrow--prev');
 	let next = document.querySelector('.slider4__arrows-arrow--next');
-	let slider4Slides = document.querySelectorAll('.slider4__slide');
+	let slider4row = document.querySelector('.slider4__row');
 
 	prev.addEventListener('click', function () {
 
@@ -246,7 +246,7 @@ function makeSticky() {
 
 	let i = 0;
 	next.addEventListener('click', function () {
-		slider4Slides[i].classList.toggle('slider4__slide--show')
+		slider4row.classList.toggle('slider4__slides--move')
 		i++;
 	})
 

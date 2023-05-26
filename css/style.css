@@ -515,6 +515,7 @@ h3 {
   max-width: 500px;
   margin: 0 auto;
   border-radius: 30px;
+  overflow: hidden;
 }
 .slider4__arrows {
   padding-top: 20px;
@@ -562,16 +563,24 @@ h3 {
   display: -ms-flexbox;
   display: flex;
 }
+.slider4__slides--move {
+  -webkit-transform: translateX(-25%);
+      -ms-transform: translateX(-25%);
+          transform: translateX(-25%);
+}
+.slider4__row {
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 .slider4__slide {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
   width: 400px;
-}
-.slider4__slide--show {
-  -webkit-transform: translateX(-100%);
-      -ms-transform: translateX(-100%);
-          transform: translateX(-100%);
 }
 .slider4__text {
   text-align: center;

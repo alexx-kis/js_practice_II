@@ -441,6 +441,7 @@ h3 {
 		max-width: 500px;
 		margin: 0 auto;
 		border-radius: 30px;
+		overflow: hidden;
 	}
 
 	&__arrows {
@@ -479,10 +480,19 @@ h3 {
 		overflow: hidden;
 		position: relative;
 		display: flex;
-
+		// transform: translateX(-100%);
+		
 		img {
 			// width: 400px;
 		}
+
+		&--move {
+			transform: translateX(-25%);
+		}
+	}
+	&__row {
+		transition: all .3s;
+		display: flex;
 	}
 
 	&__slide {
@@ -490,9 +500,7 @@ h3 {
 		width: 400px;
 	}
 
-	&__slide--show {
-		transform: translateX(-100%);
-	}
+
 
 	&__text {
 		text-align: center;
