@@ -26,6 +26,12 @@
 							<li class="header__menu-item">
 								<a href="#checklist" class="header__menu-link">Checklist</a>
 							</li>
+							<li class="header__menu-item">
+								<a href="#calc" class="header__menu-link">Products calculator</a>
+							</li>
+							<li class="header__menu-item">
+								<a href="#sliders" class="header__menu-link">Slider</a>
+							</li>
 						</ul>
 					</nav>
 				</div>
@@ -37,11 +43,99 @@
 			<section class="main__checklist checklist" id="checklist">
 				<div class="container">
 					<h2 class="checklist__heading heading">Checklist</h2>
-					<p class="checklist__text">Enter a task</p>
+					<p class="checklist__text description">Enter a task, press Enter to add the task to the list, double
+						click to edit</p>
 					<div class="checklist__inner">
-						<input type="text" class="checklist__input">
+						<input type="text" class="checklist__input input">
 						<ul class="checklist__list"></ul>
 					</div>
+				</div>
+			</section>
+
+			<section class="main__calc calc" id="calc">
+				<div class="container">
+					<h2 class="calc__heading heading">Products calculator</h2>
+					<p class="calc__text description">The description will be here</p>
+					<div class="calc__inner">
+						<form class="calc__form">
+							<input type="text" class="calc__form-input input name" placeholder="product name" required>
+							<input type="text" class="calc__form-input input price" placeholder="price" required>
+							<input type="text" class="calc__form-input input amount" placeholder="amount" required>
+							<button type="submit" class="calc__form-button button">Add product</button>
+						</form>
+						<div class="calc__table-inner">
+							<h3 class="calc__table-title">Table of products</h3>
+							<table class="calc__table">
+								<tr class="calc__table-row">
+									<th class="calc__table-heading table__cell">Product name</th>
+									<th class="calc__table-heading table__cell">Price</th>
+									<th class="calc__table-heading table__cell">amount</th>
+									<th class="calc__table-heading table__cell">Summ</th>
+									<th class="calc__table-heading table__cell">Remove</th>
+								</tr>
+							</table>
+							<div class="calc__table-cost">
+								<p class="calc__table-cost-name">Total cost:</p>
+								<p class="calc__table-cost-output"></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="main__sliders sliders" id="sliders">
+				<div class="container">
+					<h2 class="sliders__heading heading">Sliders</h2>
+
+					<div class="sliders__slider1 slider1">
+						<h3 class="slider1__heading heading">
+							Slider 1
+						</h3>
+						<div class="slider1__inner">
+							<div class="slider1__text"></div>
+						</div>
+					</div>
+
+					<div class="sliders__slider2 slider2">
+						<h3 class="slider2__heading heading">Slider 2</h3>
+						<div class="slider2__inner">
+							<div class="slider2__arrows">
+								<div class="slider2__arrows-arrow slider2__arrows-arrow--prev">←</div>
+								<div class="slider2__arrows-arrow slider2__arrows-arrow--next">→</div>
+							</div>
+							<div class="slider2__text"></div>
+						</div>
+					</div>
+
+					<div class="sliders__slider3 slider3">
+						<h3 class="slider3__heading heading">Slider 3 (Через пути в массиве JS)</h3>
+						<div class="slider3__inner">
+							<div class="slider3__arrows">
+								<div class="slider3__arrows-arrow slider3__arrows-arrow--prev">←</div>
+								<div class="slider3__arrows-arrow slider3__arrows-arrow--next">→</div>
+							</div>
+							<div class="slider3__slides">
+								<img src="" alt="">
+							</div>
+						</div>
+					</div>
+
+					<div class="sliders__slider4 slider4">
+						<h3 class="slider4__heading heading">Slider 4 (Через HTML)</h3>
+						<div class="slider4__inner">
+							<div class="slider4__arrows">
+								<div class="slider4__arrows-arrow slider4__arrows-arrow--prev">←</div>
+								<div class="slider3__arrows-arrow slider4__arrows-arrow--next">→</div>
+							</div>
+							<div class="slider4__slides">
+								<img src="./img/img1.webp" class="slider4__slide" alt="">
+								<img src="./img/img2.jpg" class="slider4__slide" alt="">
+								<img src="./img/img3.jpeg" class="slider4__slide" alt="">
+								<img src="./img/img4.jpeg" class="slider4__slide" alt="">
+							</div>
+						</div>
+					</div>
+
 				</div>
 			</section>
 
