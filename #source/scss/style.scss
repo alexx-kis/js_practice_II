@@ -59,7 +59,7 @@ html {
 	}
 
 	&:hover {
-		color: yellow;
+		color: #fff;
 	}
 
 }
@@ -76,7 +76,7 @@ h3 {
 }
 
 .main--sticky {
-	padding-top: 180px;
+	// padding-top: 180px;
 }
 
 .input {
@@ -102,7 +102,7 @@ h3 {
 	padding: 20px 0;
 	z-index: 3;
 	background: #fff;
-	box-shadow: 0px 0px 20px 1px #e3e3e3;
+	width: 100%;
 
 	.container {
 		max-width: 1920px;
@@ -110,7 +110,11 @@ h3 {
 
 	&__menu {
 		height: 50px;
+		box-shadow: 0px 0px 20px 1px #e3e3e3;
 		background: $orange-color;
+		position: absolute;
+		width: 100%;
+		z-index: 2;
 	}
 
 	&__menu-list {
@@ -129,13 +133,15 @@ h3 {
 		transition: all .3s;
 
 		&:hover {
-			color: yellow;
+			color: #fff;
 		}
 	}
 
 	&--sticky {
-		position: fixed;
-		width: 100%;
+		.header__menu {
+				top: 0;
+				position: fixed;
+			}
 	}
 }
 
@@ -219,7 +225,7 @@ h3 {
 /*==================================== PRODUCTS CALCULATOR ====================================*/
 
 .calc {
-	padding: 180px 0 0;
+	padding: 60px 0;
 
 	&__heading {}
 
@@ -282,8 +288,13 @@ h3 {
 
 
 .sliders {
-	padding: 180px 0 0;
+	padding: 60px 0;
+	
+	&__inner {
+		display: grid;
+		grid-template: repeat(2, 1fr) / repeat(2, 1fr);
 
+	}
 	&__heading {}
 
 	&__slider1 {}
@@ -470,14 +481,20 @@ h3 {
 		display: flex;
 
 		img {
-			width: 400px;
+			// width: 400px;
 		}
 	}
 
 	&__slide {
 		transition: all .3s;
+		width: 400px;
 	}
+
 	&__slide--show {
 		transform: translateX(-100%);
+	}
+
+	&__text {
+		text-align: center;
 	}
 }
