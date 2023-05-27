@@ -238,17 +238,32 @@ function makeSticky() {
 ; (function () {
 	let prev = document.querySelector('.slider4__arrows-arrow--prev');
 	let next = document.querySelector('.slider4__arrows-arrow--next');
-	let slider4row = document.querySelector('.slider4__row');
 
-	prev.addEventListener('click', function () {
-
-	});
+	let slides = document.querySelectorAll('.slider4__slide');
 
 	let i = 0;
-	next.addEventListener('click', function () {
-		slider4row.classList.toggle('slider4__slides--move')
-		i++;
-	})
 
+	next.addEventListener('click', function () {
+		i++;
+		if (i <= 3) {
+			slides[i-1].classList.remove('slider4__slide--active');
+			slides[i].classList.add('slider4__slide--active');
+		} else {
+			i = 0;
+			slides[i].classList.add('slider4__slide--active');
+			slides[3].classList.remove('slider4__slide--active');
+		}
+	});
+	prev.addEventListener('click', function () {
+		i--;
+		if (i >= 0) {
+			slides[i+1].classList.remove('slider4__slide--active');
+			slides[i].classList.add('slider4__slide--active');
+		} else {
+			i = 3;
+			slides[i].classList.add('slider4__slide--active');
+			slides[0].classList.remove('slider4__slide--active');
+		}
+	});
 
 })();
