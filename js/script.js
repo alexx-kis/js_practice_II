@@ -210,7 +210,7 @@ function makeSticky() {
 })();
 
 ; (function () {
-	let srcs = ['./img/img1.webp', './img/img2.jpg', './img/img3.jpeg', './img/img4.jpeg'];
+	let srcs = ['./img/img1.jpg', './img/img2.jpg', './img/img3.jpeg', './img/img4.jpeg'];
 	let slideImg = document.querySelector('.slider3__slides img');
 	let prev = document.querySelector('.slider3__arrows-arrow--prev');
 	let next = document.querySelector('.slider3__arrows-arrow--next');
